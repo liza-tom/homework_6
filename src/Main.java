@@ -42,10 +42,10 @@ public class Main {
         }
 
         //task 9
+        int total = 0;
         for (int i = 1; i <= 12; i++) {
-            int total = sum * i;
-            int withPercent = total + total / 100;
-            System.out.println("Месяц " + i + " сумма накоплений равна " + withPercent + " рублей");
+            total = total + sum + total / 100;
+            System.out.println("Месяц " + i + " сумма накоплений равна " + total + " рублей");
         }
 
         //task 10
